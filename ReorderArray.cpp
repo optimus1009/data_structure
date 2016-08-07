@@ -1,4 +1,4 @@
-//µ÷ÕûÊý×é£¬Ê¹µÃÆæÊýÎ»ÓÚÅ¼ÊýÇ°Ãæ
+//è°ƒæ•´æ•°ç»„ï¼Œä½¿å¾—å¥‡æ•°ä½äºŽå¶æ•°å‰é¢
 //12345->15342
 
 void ReorderOddEven(int* pData, unsigned int length)
@@ -10,10 +10,10 @@ void ReorderOddEven(int* pData, unsigned int length)
 	
 	while(pBegin < pEnd)
 	{
-		//ÏòºóÒÆ¶¯PBegin,Ö±µ½ËüÖ¸ÏòÅ¼Êý
+		//å‘åŽç§»åŠ¨PBegin,ç›´åˆ°å®ƒæŒ‡å‘å¶æ•°
 		while(pBegin < pEnd && (*pBegin & 0x1) != 0)
 			pBegin ++;
-		//ÏòÇ°ÒÆ¶¯pEnd£¬Ö±µ½ËüÖ¸ÏòÆæÊý
+		//å‘å‰ç§»åŠ¨pEndï¼Œç›´åˆ°å®ƒæŒ‡å‘å¥‡æ•°
 		while(pBegin < pEnd && (*pEnd & 0x1) != 0)
 			pEnd --;
 		
